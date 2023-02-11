@@ -5,9 +5,7 @@
 }
 
 .app {
-  min-height: 100dvh;
   min-height: 100vh;
-  min-width: 100dvw;
   min-width: 100vw;
   display: grid;
   text-align: center;
@@ -66,7 +64,7 @@ button::after {
   content: url('/images/icon-dice.svg');
 }
 
-@media (width < 400px) {
+@media (width < 500px) {
   .card_container {
     padding: 1rem;
   }
