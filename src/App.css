@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100dvh;
+  min-height: 100vh;
+  min-width: 100dvw;
+  min-width: 100vw;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  background-color: #202733;
+}
+
+.card_container {
+  height: auto;
+  width: 95%;
+  max-width: 540px;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  background-color: #313A48;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 3em;
+  color: #53FFAA;
+}
+
+span {
+  color: #CEE3E9;
+}
+
+span:nth-child(3) {
+  line-height: 5.5em;
+}
+
+span:nth-child(3)::after {
+  content: url('/images/pattern-divider-desktop.svg')
+}
+
+hr {
+  width: 90%;
+  color: #CEE3E9;
+}
+
+button {
+  bottom: -30px;
+  position: absolute;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #53FFAA;
+}
+
+button::after {
+  content: url('/images/icon-dice.svg');
+}
+
+@media (width < 400px) {
+  .card_container {
+    padding: 1rem;
+  }
+
+  span:nth-child(3)::after {
+    content: url('/images/pattern-divider-mobile.svg')
+  }
+}
+
+/* doesn't fit a fold phone or iphone xr */
